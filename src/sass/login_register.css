@@ -1,0 +1,45 @@
+/*
+Error: Invalid GBK character "\xE5"
+        on line 123 of login_register.scss
+
+118: 		}
+119: 	}
+120: }
+121: 
+122: 
+123: /* 密码强度改变的样式 *\/
+124: 
+125: .pwdColor {
+126: 	position: absolute;
+127: 	top: 166px;
+128: 	left: 77px;
+
+Backtrace:
+login_register.scss:123
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1297:in `block in find_encoding_error'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `each_with_index'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:1296:in `find_encoding_error'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/util.rb:905:in `check_sass_encoding'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:436:in `check_encoding!'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:392:in `_to_tree'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+E:/Program Files/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+E:/Program Files/Ruby23-x64/bin/scss:22:in `load'
+E:/Program Files/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 123 of login_register.scss\A \A 118: 		}\A 119: 	}\A 120: }\A 121: \A 122: \A 123: /* 密码强度改变的样式 */\A 124: \A 125: .pwdColor {\A 126: 	position: absolute;\A 127: 	top: 166px;\A 128: 	left: 77px;"; }

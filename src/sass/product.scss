@@ -1,0 +1,106 @@
+// produce style
+
+#produce {
+	.searchType {
+		width: 1200px;
+		margin: 30px auto;
+		border: 1px solid #ddd;
+		dl {
+			width: 95%;
+			margin: 10px auto;
+			border-bottom: 1px dotted #ddd;
+			height: 40px;
+			dt {
+				width: 8%;
+				height: 40px;
+				float: left;
+				font-size: 14px;
+				color: #666;
+				line-height: 40px;
+				font-weight: bold;
+			}
+			dd {
+				float: right;
+				width: 90%;
+				font-size: 12px;
+				line-height: 40px;
+				a {
+					padding: 5px 20px;
+					&.active, &:hover {
+						color: #fff;
+						background-color: #F42760;
+					}
+				}
+			}
+		}
+	}
+	h3 {
+		height: 38px;
+		line-height: 38px;
+		font-size: 16px;
+		background-color: #F5F5F5;
+		text-indent: 10px;
+	}
+	.searchShow {
+		margin-bottom: 30px;
+		.ShowCon {
+			padding: 20px;
+			dl {
+				float: left;
+				width: 212px;
+				height: 310px;
+				margin-right: 19px;
+				margin-top: 10px;
+				box-shadow: 0px 2px 5px #ddd;
+				dd {
+					font-size: 16px;
+					text-align: center;
+					line-height: 27px;
+					margin:2px 0;
+					span {
+						display: inline-block;
+						width: 80px;
+						line-height: 21px;
+						height: 21px;
+						padding: 2px;
+						margin: 5px 0;
+						&.price {
+							background-color: #626262;
+							color: #fff;
+						}
+						&.buy {
+							a {
+								display: inline-block;
+								width: 80px;
+								line-height: 21px;
+								height: 21px;
+								padding: 2px;
+								margin-left: -2px;
+								background-color: #F42760;
+								color: #fff;
+							}
+						}
+						&.num {
+							color: #F42760;
+							margin-left: -30px;
+						}
+					}
+					&.last {
+						font-size: 14px;
+						margin-left: 43px;
+					}
+				}
+				&.last {
+					margin-bottom: 50px;
+				}
+			}
+			.pic {
+				img {
+					width: 200px;
+					height: 200px;
+				}
+			}
+		}
+	}
+}
+

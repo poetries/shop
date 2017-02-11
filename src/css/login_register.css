@@ -1,0 +1,150 @@
+input {
+  padding-left: 10px; }
+
+#login .content {
+  width: 1000px;
+  height: 600px;
+  margin: 30px auto;
+  box-shadow: 0px 0px 10px #666;
+  background: #f2f2f2; }
+
+#login .content .ti {
+  width: 807px;
+  height: 37px;
+  margin: 0 auto;
+  padding-top: 40px; }
+
+#login .content .ti span {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  height: 37px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px; }
+
+#login .content .ti span.active {
+  border-bottom: 2px solid #6699ff; }
+
+#login .content .LgRegCon {
+  height: 470px;
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px; }
+
+#login .content .LgRegCon .Lg {
+  display: block; }
+
+#login .content .LgRegCon .Lg p .forgotpwd {
+  color: #36A2DC;
+  font-size: 12px;
+  margin-left: 101px; }
+
+#login .content .LgRegCon .Lg p.ch label {
+  margin-left: 10px; }
+
+#login .content .LgRegCon .Lg p.txt a {
+  line-height: 20px; }
+
+#login .content .LgRegCon .Lg p.txt a.btn1 {
+  background: #ff9900; }
+
+#login .content .LgRegCon .Reg {
+  display: none; }
+
+#login .content .LgRegCon .Reg label {
+  margin-left: 10px;
+  text-align: left;
+  display: inline-block;
+  font-size: 12px; }
+
+#login .content .LgRegCon .con {
+  position: relative; }
+
+#login .content .LgRegCon .con p {
+  margin-top: 20px;
+  margin-left: 20px; }
+
+#login .content .LgRegCon .con p.ch {
+  padding-left: 90px; }
+
+#login .content .LgRegCon .con p.txt {
+  margin-top: 30px;
+  padding-left: 100px; }
+
+#login .content .LgRegCon .con p.txt .btn {
+  width: 120px;
+  height: 38px;
+  display: inline-block;
+  margin-right: 45px;
+  font-size: 14px;
+  background-color: #ff6699;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 37px;
+  text-align: center;
+  border: none; }
+
+#login .content .LgRegCon .con p.txt a {
+  line-height: 20px; }
+
+#login .content .LgRegCon .con p.txt a.btn1 {
+  background: #ff9900; }
+
+#login .content .LgRegCon .con .txt {
+  width: 330px;
+  height: 40px;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  border: none; }
+
+#login .content .LgRegCon .con span {
+  display: inline-block;
+  width: 80px;
+  height: 19px;
+  margin-right: 10px;
+  text-align: right;
+  font-size: 14px; }
+
+.pwdColor {
+  position: absolute;
+  top: 166px;
+  left: 77px;
+  width: 271px;
+  height: 5px;
+  margin-top: 6px;
+  margin-left: 53px; }
+
+.pwdColor .co1 {
+  background: #f00; }
+
+.pwdColor .co2 {
+  background: #00ff66; }
+
+.pwdColor .co3 {
+  background: #0033cc; }
+
+.pwdColor span {
+  float: left;
+  margin-right: 10px;
+  background: #ccc;
+  height: 5px; }
+
+.tips {
+  color: red; }
+
+.xh {
+  width: 3px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 12px;
+  color: red; }
+
+.xh.last {
+  padding-left: 10px; }
+
+.repwd_tips {
+  color: red;
+  display: none; }
