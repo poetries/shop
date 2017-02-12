@@ -417,6 +417,10 @@
 					position: absolute;
 					top: 0;
 					left: 0;
+					display: none;
+					&.active {
+						display: block;
+					}
 				}
 			}
 			dl {
@@ -442,7 +446,7 @@
 					}
 				}
 			}
-			p {
+			ul {
 				.title {
 					font-size: 16px;
 					text-align: center;
@@ -450,16 +454,16 @@
 					padding-bottom: 10px;
 					border-bottom: 1px solid #ddd;
 				}
-				a {
+				li {
+					float: left;
 					width: 220px;
 					height: 15px;
-					display: block;
 					float: left;
 					text-align: center;
 					margin-right: 10px;
 					padding-top: 6px;
 					position: relative;
-					top: -5px;
+					top: -1px;
 					&.active {
 						color: #e61f18;
 						border-top: 1px solid #e61f18;
@@ -473,7 +477,7 @@
 			height: 320px;
 			border: 1px solid #ddd;
 			.ti {
-				a {
+				li {
 					display: inline-block;
 					float: left;
 					width: 110px;
@@ -485,6 +489,8 @@
 						background: #fff;
 						color: #e61f18;
 						border-top: 1px solid #e61f18;
+						position: relative;
+						top: -1px;
 					}
 				}
 			}
@@ -494,6 +500,10 @@
 					position: absolute;
 					top: 35px;
 					left: 0;
+					display: none;
+					&.active {
+						display: block;
+					}
 					p {
 						text-align: center;
 						&.des {
@@ -669,6 +679,10 @@
 					position: absolute;
 					top: 0;
 					left: 0;
+					display: none;
+					&.active {
+						display: block;
+					}
 				}
 				li {
 					width: 200px;
@@ -767,6 +781,10 @@
 					position: absolute;
 					top: 0;
 					left: 0;
+					display: none;
+					&.active {
+						display: block;
+					}
 					li {
 						float: left;
 						width: 230px;
@@ -811,7 +829,7 @@
 			}
 			&.active {
 				border:1px solid #f42760;
-				span {
+				a {
 					width: 126px;
 					height: 33px;
 					background: #fff;

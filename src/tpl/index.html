@@ -230,14 +230,14 @@
 	<div class="container" id="topEvent">
 			<div class="topList content">
 				<div class="topList-l">
-					<p class="title clearfix">
-						<a class="active" href="javascript:void(0);">天天低价</a>
-						<a  href="javascript:void(0);">商城推荐</a>
-						<a  href="javascript:void(0);">新品速递</a>
-						<a  href="javascript:void(0);">猜你喜欢</a>
-					</p>
+					<ul class="title clearfix">
+						<li class="active"><a class="active" href="javascript:void(0);" data-for="#low_price">天天低价</a></li>
+						<li><a href="javascript:void(0);" data-for="#recomm">商城推荐</a></li>
+						<li><a href="javascript:void(0);" data-for="#newProduce">新品速递</a></li>
+						<li><a href="javascript:void(0);" data-for="#gessYouLike">猜你喜欢</a></li>
+					</ul>
 					<div class="topListCon">
-						<div class="con list-1">
+						<div class="con list-1 active" id="low_price">
 							<dl class="first">
 								<dt class="img"><a href="goods.html"><img src="images/dg_img1.jpg" alt=""></a></dt>
 								<dd><a href="goods.html">个性定制水晶音乐盒摆件</a></dd>
@@ -259,7 +259,7 @@
 								<dd class="price">￥600.0元</dd>
 							</dl>
 						</div>
-						<div class="con list-2">
+						<div class="con list-2" id="recomm">
 							<dl class="first">
 								<dt class="img"><a href="goods.html"><img src="images/dg_img1.jpg" alt=""></a></dt>
 								<dd><a href="goods.html">个性定制水晶音乐盒摆件</a></dd>
@@ -281,7 +281,7 @@
 								<dd class="price">￥600.0元</dd>
 							</dl>
 						</div>
-						<div class="con list-3">
+						<div class="con list-3" id="newProduce">
 							<dl class="first">
 								<dt class="img"><a href="goods.html"><img src="images/dg_img1.jpg" alt=""></a></dt>
 								<dd><a href="goods.html">个性定制水晶音乐盒摆件</a></dd>
@@ -303,7 +303,7 @@
 								<dd class="price">￥600.0元</dd>
 							</dl>
 						</div>
-						<div class="con list-4">
+						<div class="con list-4" id="gessYouLike">
 							<dl class="first">
 								<dt class="img"><a href="goods.html"><img src="images/dg_img2.jpg" alt=""></a></dt>
 								<dd><a href="goods.html">个性定制水晶音乐盒摆件</a></dd>
@@ -328,21 +328,21 @@
 					</div>
 				</div>
 				<div class="topList-r">
-					<p class="ti">
-						<a href="javascript:void(0);" class="active">热门活动</a>
-						<a href="javascript:void(0);" >频道精选</a>
-					</p>
+					<ul class="ti">
+						<li class="active"><a href="javascript:void(0);"  data-for="#topList-r-recommend-1">热门活动</a></li>
+						<li><a href="javascript:void(0);" data-for="#topList-r-recommend-2">频道精选</a></li>
+					</ul>
 					<div class="topList-r-recommend">
-						<div class="con topList-r-recommend-1 top1">
+						<div class="con topList-r-recommend-1 top1 active" id="topList-r-recommend-1">
 							<a href="goods.html"><img src="images/jr_img1.jpg" alt=""></a>
 							<p class="des">个性定制水晶音乐盒摆件</p>
-							<p class="time"><span>12</span>天 <span>22</span>小时 <span>36</span>分 <span>05</span>秒</p>
+							<p class="time"><span class="days"></span>天 <span class="hours"></span>小时 <span class="mins"></span>分 <span class="seconds"></span>秒</p>
 
 						</div>
-						<div class="con topList-r-recommend-2">
+						<div class="con topList-r-recommend-2"  id="topList-r-recommend-2">
 							<a href="goods.html"><img src="images/jr_img5.jpg" alt="" ></a>
 							<p class="des">个性定制水晶音乐盒摆件</p>
-							<p class="time"><span>4</span>天 <span>12</span>小时 <span>36</span>分 <span>65</span>秒</p>
+							<p class="time"><span class="days"></span>天 <span class="hours"></span>小时 <span class="mins"></span>分 <span class="seconds"></span>秒</p>
 
 						</div>
 					</div>
@@ -386,11 +386,11 @@
 					</div>
 					<div class="parM">
 						<ul>
-							<li class="active"><img src="images/ico.png" alt="">照片定制</li>
-							<li><img src="images/ico.png" alt="">钥匙扣</li>
-							<li><img src="images/ico.png" alt="">围巾、帽子</li>
-							<li><img src="images/ico.png" alt="">香水座</li>
-							<li><img src="images/ico.png" alt="">台灯</li>
+							<li class="active"><img src="images/ico.png" alt=""><a data-for="#photo">照片定制</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#keys">钥匙扣</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#maozi">围巾、帽子</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#xs">香水座</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#light">台灯</a></li>
 							<li class="last">
 								<a href="goods.html"><img src="images/zp1.jpg" alt="" ></a>
 								<p class="desc">宠爱一生 925纯银紫水晶项链</p>
@@ -399,7 +399,7 @@
 						</ul>
 					</div>
 					<div class="parR">
-						<ul class="con list-1">
+						<ul id="photo" class="con active list-1">
 							<li>
 								<a href="goods.html"><img src="images/zp1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -425,7 +425,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-2">
+						<ul id="keys"  class="con list-2">
 							<li>
 								<a href="goods.html"><img src="images/zp3.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -451,7 +451,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-3">
+						<ul id="maozi"  class="con list-3">
 							<li>
 								<a href="goods.html;"><img src="images/zp1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -477,7 +477,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-4">
+						<ul id="xs"  class="con list-4">
 							<li>
 								<a href="goods.html"><img src="images/zp1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -503,7 +503,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-5">
+						<ul id="light"  class="con list-5">
 							<li>
 								<a href="goods.html"><img src="images/zp1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -539,12 +539,12 @@
 		<div class="content flower">
 			<ul class="flowerNav">
 				<li class="first">鲜花</li>
-				<li class="item"><span>白玫瑰</span></li>
-				<li class="item"><span>红玫瑰</span></li>
-				<li class="item"><span>郁金香</span></li>
-				<li class="item"><span>牡丹花</span></li>
-				<li class="item"><span>法国玫瑰</span></li>
-				<li class="item active"><span>香槟玫</span></li>
+				<li class="item"><a data-for="#mmg">白玫瑰</a></li>
+				<li class="item"><a data-for="#hmg">红玫瑰</a></li>
+				<li class="item"><a data-for="#yjx">郁金香</a></li>
+				<li class="item"><a data-for="#mdh">牡丹花</a></li>
+				<li class="item"><a data-for="#fhmg">法国玫瑰</a></li>
+				<li class="item active" data-for="#xbm"><a>香槟玫</a></li>
 
 			</ul>
 			<div class="flowerCon clearfix">
@@ -579,7 +579,7 @@
 					</ul>
 				</div>
 				<div class="flowerR">
-					<ul class="flowerList list-1">
+					<ul id="xbm" class="flowerList active list-1">
 						<li>
 							<a class="pic" href="goods.html">
 								<img src="images/xh_img1.jpg" alt="" width="180" height="180">
@@ -623,7 +623,7 @@
 							<p class="price">￥300.0元</p>
 						</li>
 					</ul>
-					<ul class="flowerList list-2">
+					<ul id="fhmg" class="flowerList list-2">
 						<li>
 							<a class="pic" href="goods.html">
 								<img src="images/xh_img2.jpg" alt="" width="180" height="180">
@@ -667,7 +667,7 @@
 							<p class="price">￥300.0元</p>
 						</li>
 					</ul>
-					<ul class="flowerList list-3">
+					<ul id="mdh" class="flowerList list-3">
 						<li>
 							<a class="pic" href="goods.html">
 								<img src="images/xh_img1.jpg" alt="" width="180" height="180">
@@ -711,7 +711,7 @@
 							<p class="price">￥300.0元</p>
 						</li>
 					</ul>
-					<ul class="flowerList list-4">
+					<ul id="yjx" class="flowerList list-4">
 						<li>
 							<a class="pic" href="goods.html">
 								<img src="images/xh_img2.jpg" alt="" width="180" height="180">
@@ -755,7 +755,7 @@
 							<p class="price">￥300.0元</p>
 						</li>
 					</ul>
-					<ul class="flowerList list-5">
+					<ul id="hmg" class="flowerList list-5">
 						<li>
 							<a class="pic" href="goods.html">
 								<img src="images/xh_img1.jpg" alt="" width="180" height="180">
@@ -799,7 +799,7 @@
 							<p class="price">￥300.0元</p>
 						</li>
 					</ul>
-					<ul class="flowerList list-6">
+					<ul id="mmg" class="flowerList list-6">
 						<li>
 							<a class="pic" href="goods.html">
 								<img src="images/xh_img4.jpg" alt="" width="180" height="180">
@@ -884,11 +884,11 @@
 					</div>
 					<div class="parM">
 						<ul>
-							<li class="active"><img src="images/ico.png" alt="">送女朋友</li>
-							<li><img src="images/ico.png" alt="">送男朋友</li>
-							<li><img src="images/ico.png" alt="">送父亲</li>
-							<li><img src="images/ico.png" alt="">送员工</li>
-							<li><img src="images/ico.png" alt="">同事</li>
+							<li class="active"><img src="images/ico.png" alt=""><a data-for="#sendGirlFrend">送女朋友</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#sendMan">送男朋友</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#sendFather">送父亲</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#sendYg">送员工</a></li>
+							<li><img src="images/ico.png" alt=""><a data-for="#sendGs">同事</a></li>
 							<li class="last">
 								<a href="goods.html"><img src="images/hot.jpg" alt="" ></a>
 								<p class="desc">宠爱一生 925纯银紫水晶项链</p>
@@ -897,7 +897,7 @@
 						</ul>
 					</div>
 					<div class="parR">
-						<ul class="con list-1">
+						<ul id="sendGirlFrend" class="con active list-1">
 							<li>
 								<a href="goods.html"><img src="images/srpic1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -923,7 +923,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-2">
+						<ul id="sendMan"   class="con list-2">
 							<li>
 								<a href="goods.html"><img src="images/srpic3.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -949,7 +949,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-3">
+						<ul id="sendFather"  class="con list-3">
 							<li>
 								<a href="goods.html"><img src="images/srpic1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -975,7 +975,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-4">
+						<ul id="sendYg"  class="con list-4">
 							<li>
 								<a href="goods.html"><img src="images/srpic1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -1001,7 +1001,7 @@
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
 							</li>
 						</ul>
-						<ul class="con list-5">
+						<ul id="sendGs"  class="con list-5">
 							<li>
 								<a href="goods.html"><img src="images/srpic1.jpg" alt=""></a>
 								<p>瞌睡兔音乐枕<span>￥30.0</span></p>
@@ -1094,5 +1094,6 @@
 
 </body>
 <script src="lib/jquery.js"></script>
+<script src="lib/tabs.js"></script>
 <script src="js/main.js" ></script>
 </html>

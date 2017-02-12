@@ -59,18 +59,18 @@
 			<div class="LgRegCon">
 				<div class="Lg con">
 					<form action="">
-						<p><span>用户名:</span><input type="text"  name="" id="" value="" class="txt"/></p>
-						<p><span>密码:</span><input type="password"  name="" id="" value="" class="txt"/></p>
+						<p><span>用户名:</span><input type="text"  name="" id="" value="" class="txt" required/></p>
+						<p><span>密码:</span><input type="password"  name="" id="" value="" class="txt" required/></p>
 						<p class="ch"><input type="checkbox" name="" id="ch" /><label for="ch">记住本次登录信息</label></p>			<p class="txt"><input type="submit" value="登录" class="btn"/><a href="javascript:void(0);" class="btn btn1">直接购买</a></p>
 					</form>
 					<p><a class="forgotpwd" href="javascript:void(0);">忘记密码?</a></p>
 				</div>
 				<div class="Reg con">
 					<form action="">
-						<p><span>用户名:</span><input type="text"  name="" id="" value="" class="txt"/><label for="">用户名是邮数字、字母、下划线组成</label></p>
-						<p><span>邮箱:</span><input type="text"  name="" id="" value="" class="txt"/><label for=""> 请输入正确的邮箱地址</label></p>
-						<p><span>密码:</span><input type="password"  name="" id="" value="" class="txt"/><label for="">密码是6-16邮数字、字母、下划线</label></p>
-						<p><span>确认密码:</span><input type="password"  name="" id="" value="" class="txt"/><label for="">两次密码要一样</label></p>
+						<p><span>用户名:</span><input type="text"  name="" id="" value="" class="txt" required/><label for="">用户名是邮数字、字母、下划线组成</label></p>
+						<p><span>邮箱:</span><input type="email"  name="" id="" value="" class="txt" required/><label for=""> 请输入正确的邮箱地址</label></p>
+						<p><span>密码:</span><input type="password"  name="" id="" value="" class="txt" required/><label for="">密码是6-16邮数字、字母、下划线</label></p>
+						<p><span>确认密码:</span><input type="password"  name="" id="" value="" class="txt" required/><label for="">两次密码要一样</label></p>
 						<p class="txt"><input type="submit" value="注册新用户" class="btn"/></p>
 					</form>
 				</div>
@@ -140,9 +140,8 @@
 
 
 
-
-
 </body>
 <script src="lib/jquery.js"></script>
+<script src="lib/tabs.js" ></script>
 <script src="js/main.js" ></script>
 </html>

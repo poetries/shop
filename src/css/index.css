@@ -385,7 +385,11 @@
 #topEvent .topList .topList-l .topListCon .con {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
+
+#topEvent .topList .topList-l .topListCon .con.active {
+  display: block; }
 
 #topEvent .topList .topList-l dl {
   float: left;
@@ -408,25 +412,25 @@
   height: 200px;
   margin: 15px; }
 
-#topEvent .topList .topList-l p .title {
+#topEvent .topList .topList-l ul .title {
   font-size: 16px;
   text-align: center;
   padding-top: 4px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd; }
 
-#topEvent .topList .topList-l p a {
+#topEvent .topList .topList-l ul li {
+  float: left;
   width: 220px;
   height: 15px;
-  display: block;
   float: left;
   text-align: center;
   margin-right: 10px;
   padding-top: 6px;
   position: relative;
-  top: -5px; }
+  top: -1px; }
 
-#topEvent .topList .topList-l p a.active {
+#topEvent .topList .topList-l ul li.active {
   color: #e61f18;
   border-top: 1px solid #e61f18; }
 
@@ -436,7 +440,7 @@
   height: 320px;
   border: 1px solid #ddd; }
 
-#topEvent .topList .topList-r .ti a {
+#topEvent .topList .topList-r .ti li {
   display: inline-block;
   float: left;
   width: 110px;
@@ -445,10 +449,12 @@
   text-align: center;
   background: #ddd; }
 
-#topEvent .topList .topList-r .ti a.active {
+#topEvent .topList .topList-r .ti li.active {
   background: #fff;
   color: #e61f18;
-  border-top: 1px solid #e61f18; }
+  border-top: 1px solid #e61f18;
+  position: relative;
+  top: -1px; }
 
 #topEvent .topList .topList-r .topList-r-recommend {
   position: relative; }
@@ -456,7 +462,11 @@
 #topEvent .topList .topList-r .topList-r-recommend .con {
   position: absolute;
   top: 35px;
-  left: 0; }
+  left: 0;
+  display: none; }
+
+#topEvent .topList .topList-r .topList-r-recommend .con.active {
+  display: block; }
 
 #topEvent .topList .topList-r .topList-r-recommend .con p {
   text-align: center; }
@@ -614,7 +624,11 @@
 .commCss .parCon .parR ul.con {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
+
+.commCss .parCon .parR ul.con.active {
+  display: block; }
 
 .commCss .parCon .parR ul li {
   width: 200px;
@@ -704,7 +718,11 @@
   height: 503px;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  display: none; }
+
+#flower .flower .flowerCon .flowerR .flowerList.active {
+  display: block; }
 
 #flower .flower .flowerCon .flowerR .flowerList li {
   float: left;
@@ -749,7 +767,7 @@
 #flower .flowerNav li.active {
   border: 1px solid #f42760; }
 
-#flower .flowerNav li.active span {
+#flower .flowerNav li.active a {
   width: 126px;
   height: 33px;
   background: #fff;
